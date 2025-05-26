@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-JobhunterApplication<jobhunter-01-spring-java-restful-final>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "vn.hoidanit.jobhunter.JobhunterApplication",
+            "projectName": "jobhunter-01-spring-java-restful-final",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
