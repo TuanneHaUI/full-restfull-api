@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.service;
+package vn.tuanne.jobhunter.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,11 +7,11 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
-import vn.hoidanit.jobhunter.domain.Permission;
-import vn.hoidanit.jobhunter.domain.Role;
-import vn.hoidanit.jobhunter.domain.response.ResultPaginationDTO;
-import vn.hoidanit.jobhunter.repository.PermissionRepository;
-import vn.hoidanit.jobhunter.repository.RoleRepository;
+import vn.tuanne.jobhunter.domain.Permission;
+import vn.tuanne.jobhunter.domain.Role;
+import vn.tuanne.jobhunter.domain.response.ResultPaginationDTO;
+import vn.tuanne.jobhunter.repository.PermissionRepository;
+import vn.tuanne.jobhunter.repository.RoleRepository;
 
 @Service
 public class RoleService {

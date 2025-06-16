@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.util.error;
+package vn.tuanne.jobhunter.util.error;
 
 public class StorageException extends Exception {
     // Constructor that accepts a message

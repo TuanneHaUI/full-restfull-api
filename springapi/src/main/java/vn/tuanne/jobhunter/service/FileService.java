@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.service;
+package vn.tuanne.jobhunter.service;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,7 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Service
 public class FileService {
 
-    @Value("${hoidanit.upload-file.base-uri}")
+    @Value("${tuanne.upload-file.base-uri}")
     private String baseURI;
 
     public void createDirectory(String folder) throws URISyntaxException {

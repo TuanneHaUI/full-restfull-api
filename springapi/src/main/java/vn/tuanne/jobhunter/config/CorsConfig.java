@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.config;
+package vn.tuanne.jobhunter.config;
 
 import java.util.Arrays;
 

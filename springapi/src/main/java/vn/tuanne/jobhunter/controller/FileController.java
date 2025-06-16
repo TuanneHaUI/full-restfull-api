@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.controller;
+package vn.tuanne.jobhunter.controller;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -19,10 +19,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import vn.hoidanit.jobhunter.domain.file.ResUploadFileDTO;
-import vn.hoidanit.jobhunter.service.FileService;
-import vn.hoidanit.jobhunter.util.annotation.ApiMessage;
-import vn.hoidanit.jobhunter.util.error.StorageException;
+import vn.tuanne.jobhunter.domain.file.ResUploadFileDTO;
+import vn.tuanne.jobhunter.service.FileService;
+import vn.tuanne.jobhunter.util.annotation.ApiMessage;
+import vn.tuanne.jobhunter.util.error.StorageException;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -30,7 +30,7 @@ public class FileController {
 
     private final FileService fileService;
 
-    @Value("${hoidanit.upload-file.base-uri}")
+    @Value("${tuanne.upload-file.base-uri}")
     private String baseURI;
 
     public FileController(FileService fileService) {

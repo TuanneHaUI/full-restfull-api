@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.service;
+package vn.tuanne.jobhunter.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,11 +8,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
-import vn.hoidanit.jobhunter.domain.Company;
-import vn.hoidanit.jobhunter.domain.User;
-import vn.hoidanit.jobhunter.domain.response.ResultPaginationDTO;
-import vn.hoidanit.jobhunter.repository.CompanyRepository;
-import vn.hoidanit.jobhunter.repository.UserRepository;
+import vn.tuanne.jobhunter.domain.Company;
+import vn.tuanne.jobhunter.domain.User;
+import vn.tuanne.jobhunter.domain.response.ResultPaginationDTO;
+import vn.tuanne.jobhunter.repository.CompanyRepository;
+import vn.tuanne.jobhunter.repository.UserRepository;
 
 @Service
 public class CompanyService {

@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.controller;
+package vn.tuanne.jobhunter.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.validation.Valid;
-import vn.hoidanit.jobhunter.domain.Subscriber;
-import vn.hoidanit.jobhunter.service.SubscriberService;
-import vn.hoidanit.jobhunter.util.SecurityUtil;
-import vn.hoidanit.jobhunter.util.annotation.ApiMessage;
-import vn.hoidanit.jobhunter.util.error.IdInvalidException;
+import vn.tuanne.jobhunter.domain.Subscriber;
+import vn.tuanne.jobhunter.service.SubscriberService;
+import vn.tuanne.jobhunter.util.SecurityUtil;
+import vn.tuanne.jobhunter.util.annotation.ApiMessage;
+import vn.tuanne.jobhunter.util.error.IdInvalidException;
 
 @RestController
 @RequestMapping("/api/v1")

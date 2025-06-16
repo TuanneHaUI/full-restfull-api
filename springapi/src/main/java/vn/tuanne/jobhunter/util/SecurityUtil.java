@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.util;
+package vn.tuanne.jobhunter.util;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
@@ -26,7 +26,7 @@ import org.springframework.stereotype.Service;
 
 import com.nimbusds.jose.util.Base64;
 
-import vn.hoidanit.jobhunter.domain.response.ResLoginDTO;
+import vn.tuanne.jobhunter.domain.response.ResLoginDTO;
 
 @Service
 public class SecurityUtil {
@@ -38,13 +38,13 @@ public class SecurityUtil {
         this.jwtEncoder = jwtEncoder;
     }
 
-    @Value("${hoidanit.jwt.base64-secret}")
+    @Value("${tuanne.jwt.base64-secret}")
     private String jwtKey;
 
-    @Value("${hoidanit.jwt.access-token-validity-in-seconds}")
+    @Value("${tuanne.jwt.access-token-validity-in-seconds}")
     private long accessTokenExpiration;
 
-    @Value("${hoidanit.jwt.refresh-token-validity-in-seconds}")
+    @Value("${tuanne.jwt.refresh-token-validity-in-seconds}")
     private long refreshTokenExpiration;
 
     public String createAccessToken(String email, ResLoginDTO dto) {

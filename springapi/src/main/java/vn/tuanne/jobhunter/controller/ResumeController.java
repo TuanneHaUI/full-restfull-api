@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.controller;
+package vn.tuanne.jobhunter.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,19 +17,19 @@ import com.turkraft.springfilter.boot.Filter;
 import com.turkraft.springfilter.builder.FilterBuilder;
 import com.turkraft.springfilter.converter.FilterSpecificationConverter;
 import jakarta.validation.Valid;
-import vn.hoidanit.jobhunter.domain.Company;
-import vn.hoidanit.jobhunter.domain.Job;
-import vn.hoidanit.jobhunter.domain.Resume;
-import vn.hoidanit.jobhunter.domain.User;
-import vn.hoidanit.jobhunter.domain.response.ResultPaginationDTO;
-import vn.hoidanit.jobhunter.domain.response.resume.ResCreateResumeDTO;
-import vn.hoidanit.jobhunter.domain.response.resume.ResFetchResumeDTO;
-import vn.hoidanit.jobhunter.domain.response.resume.ResUpdateResumeDTO;
-import vn.hoidanit.jobhunter.service.ResumeService;
-import vn.hoidanit.jobhunter.service.UserService;
-import vn.hoidanit.jobhunter.util.SecurityUtil;
-import vn.hoidanit.jobhunter.util.annotation.ApiMessage;
-import vn.hoidanit.jobhunter.util.error.IdInvalidException;
+import vn.tuanne.jobhunter.domain.Company;
+import vn.tuanne.jobhunter.domain.Job;
+import vn.tuanne.jobhunter.domain.Resume;
+import vn.tuanne.jobhunter.domain.User;
+import vn.tuanne.jobhunter.domain.response.ResultPaginationDTO;
+import vn.tuanne.jobhunter.domain.response.resume.ResCreateResumeDTO;
+import vn.tuanne.jobhunter.domain.response.resume.ResFetchResumeDTO;
+import vn.tuanne.jobhunter.domain.response.resume.ResUpdateResumeDTO;
+import vn.tuanne.jobhunter.service.ResumeService;
+import vn.tuanne.jobhunter.service.UserService;
+import vn.tuanne.jobhunter.util.SecurityUtil;
+import vn.tuanne.jobhunter.util.annotation.ApiMessage;
+import vn.tuanne.jobhunter.util.error.IdInvalidException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 

@@ -1,10 +1,10 @@
-package vn.hoidanit.jobhunter.config;
+package vn.tuanne.jobhunter.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import vn.hoidanit.jobhunter.domain.response.RestResponse;
+import vn.tuanne.jobhunter.domain.response.RestResponse;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.AuthenticationException;

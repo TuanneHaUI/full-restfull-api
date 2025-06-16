@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.config;
+package vn.tuanne.jobhunter.config;
 
 import java.util.Collections;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -8,8 +8,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
-import vn.hoidanit.jobhunter.service.UserService;
-import vn.hoidanit.jobhunter.util.error.IdInvalidException;
+import vn.tuanne.jobhunter.service.UserService;
+import vn.tuanne.jobhunter.util.error.IdInvalidException;
 
 @Component("userDetailsService")
 public class UserDetailsCustom implements UserDetailsService {
@@ -22,7 +22,7 @@ public class UserDetailsCustom implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        vn.hoidanit.jobhunter.domain.User user = this.userService.handleGetUserByUsername(username);
+        vn.tuanne.jobhunter.domain.User user = this.userService.handleGetUserByUsername(username);
         if (user == null) {
             throw new UsernameNotFoundException("Username/password không hợp lệ");
         }

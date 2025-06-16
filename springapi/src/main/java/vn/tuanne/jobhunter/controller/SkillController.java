@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.controller;
+package vn.tuanne.jobhunter.controller;
 
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.turkraft.springfilter.boot.Filter;
 
 import jakarta.validation.Valid;
-import vn.hoidanit.jobhunter.domain.Skill;
-import vn.hoidanit.jobhunter.domain.response.ResultPaginationDTO;
-import vn.hoidanit.jobhunter.service.SkillService;
-import vn.hoidanit.jobhunter.util.annotation.ApiMessage;
-import vn.hoidanit.jobhunter.util.error.IdInvalidException;
+import vn.tuanne.jobhunter.domain.Skill;
+import vn.tuanne.jobhunter.domain.response.ResultPaginationDTO;
+import vn.tuanne.jobhunter.service.SkillService;
+import vn.tuanne.jobhunter.util.annotation.ApiMessage;
+import vn.tuanne.jobhunter.util.error.IdInvalidException;
 
 @RestController
 @RequestMapping("/api/v1")

@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.domain.response;
+package vn.tuanne.jobhunter.domain.response;
 
 import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
 
@@ -8,7 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import vn.hoidanit.jobhunter.domain.Role;
+import vn.tuanne.jobhunter.domain.Role;
 
 @Getter
 @Setter

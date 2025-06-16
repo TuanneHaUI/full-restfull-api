@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.service;
+package vn.tuanne.jobhunter.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,13 +7,13 @@ import java.util.stream.Collectors;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-import vn.hoidanit.jobhunter.domain.Job;
-import vn.hoidanit.jobhunter.domain.Skill;
-import vn.hoidanit.jobhunter.domain.Subscriber;
-import vn.hoidanit.jobhunter.domain.response.email.ResEmailJob;
-import vn.hoidanit.jobhunter.repository.JobRepository;
-import vn.hoidanit.jobhunter.repository.SkillRepository;
-import vn.hoidanit.jobhunter.repository.SubscriberRepository;
+import vn.tuanne.jobhunter.domain.Job;
+import vn.tuanne.jobhunter.domain.Skill;
+import vn.tuanne.jobhunter.domain.Subscriber;
+import vn.tuanne.jobhunter.domain.response.email.ResEmailJob;
+import vn.tuanne.jobhunter.repository.JobRepository;
+import vn.tuanne.jobhunter.repository.SkillRepository;
+import vn.tuanne.jobhunter.repository.SubscriberRepository;
 
 @Service
 public class SubscriberService {

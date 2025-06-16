@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.service;
+package vn.tuanne.jobhunter.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,15 +9,15 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
-import vn.hoidanit.jobhunter.domain.Company;
-import vn.hoidanit.jobhunter.domain.Job;
-import vn.hoidanit.jobhunter.domain.Skill;
-import vn.hoidanit.jobhunter.domain.response.ResultPaginationDTO;
-import vn.hoidanit.jobhunter.domain.response.job.ResCreateJobDTO;
-import vn.hoidanit.jobhunter.domain.response.job.ResUpdateJobDTO;
-import vn.hoidanit.jobhunter.repository.CompanyRepository;
-import vn.hoidanit.jobhunter.repository.JobRepository;
-import vn.hoidanit.jobhunter.repository.SkillRepository;
+import vn.tuanne.jobhunter.domain.Company;
+import vn.tuanne.jobhunter.domain.Job;
+import vn.tuanne.jobhunter.domain.Skill;
+import vn.tuanne.jobhunter.domain.response.ResultPaginationDTO;
+import vn.tuanne.jobhunter.domain.response.job.ResCreateJobDTO;
+import vn.tuanne.jobhunter.domain.response.job.ResUpdateJobDTO;
+import vn.tuanne.jobhunter.repository.CompanyRepository;
+import vn.tuanne.jobhunter.repository.JobRepository;
+import vn.tuanne.jobhunter.repository.SkillRepository;
 
 @Service
 public class JobService {

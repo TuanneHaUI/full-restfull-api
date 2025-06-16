@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.controller;
+package vn.tuanne.jobhunter.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.actuate.autoconfigure.observation.ObservationProperties.Http;
@@ -20,14 +20,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.validation.Valid;
-import vn.hoidanit.jobhunter.domain.User;
-import vn.hoidanit.jobhunter.domain.request.ReqLoginDTO;
-import vn.hoidanit.jobhunter.domain.response.ResCreateUserDTO;
-import vn.hoidanit.jobhunter.domain.response.ResLoginDTO;
-import vn.hoidanit.jobhunter.service.UserService;
-import vn.hoidanit.jobhunter.util.SecurityUtil;
-import vn.hoidanit.jobhunter.util.annotation.ApiMessage;
-import vn.hoidanit.jobhunter.util.error.IdInvalidException;
+import vn.tuanne.jobhunter.domain.User;
+import vn.tuanne.jobhunter.domain.request.ReqLoginDTO;
+import vn.tuanne.jobhunter.domain.response.ResCreateUserDTO;
+import vn.tuanne.jobhunter.domain.response.ResLoginDTO;
+import vn.tuanne.jobhunter.service.UserService;
+import vn.tuanne.jobhunter.util.SecurityUtil;
+import vn.tuanne.jobhunter.util.annotation.ApiMessage;
+import vn.tuanne.jobhunter.util.error.IdInvalidException;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -38,7 +38,7 @@ public class AuthController {
         private final UserService userService;
         private final PasswordEncoder passwordEncoder;
 
-        @Value("${hoidanit.jwt.refresh-token-validity-in-seconds}")
+        @Value("${tuanne.jwt.refresh-token-validity-in-seconds}")
         private long refreshTokenExpiration;
 
         public AuthController(AuthenticationManagerBuilder authenticationManagerBuilder, SecurityUtil securityUtil,

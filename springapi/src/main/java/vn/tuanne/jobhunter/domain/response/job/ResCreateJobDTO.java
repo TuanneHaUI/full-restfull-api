@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.domain.response.job;
+package vn.tuanne.jobhunter.domain.response.job;
 
 import java.time.Instant;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import jakarta.persistence.Column;
 import lombok.Getter;
 import lombok.Setter;
-import vn.hoidanit.jobhunter.domain.Skill;
-import vn.hoidanit.jobhunter.util.constant.LevelEnum;
+import vn.tuanne.jobhunter.domain.Skill;
+import vn.tuanne.jobhunter.util.constant.LevelEnum;
 
 @Getter
 @Setter

@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.config;
+package vn.tuanne.jobhunter.config;
 
 import java.util.List;
 
@@ -9,12 +9,12 @@ import org.springframework.web.servlet.HandlerMapping;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import vn.hoidanit.jobhunter.domain.Permission;
-import vn.hoidanit.jobhunter.domain.Role;
-import vn.hoidanit.jobhunter.domain.User;
-import vn.hoidanit.jobhunter.service.UserService;
-import vn.hoidanit.jobhunter.util.SecurityUtil;
-import vn.hoidanit.jobhunter.util.error.PermissionException;
+import vn.tuanne.jobhunter.domain.Permission;
+import vn.tuanne.jobhunter.domain.Role;
+import vn.tuanne.jobhunter.domain.User;
+import vn.tuanne.jobhunter.service.UserService;
+import vn.tuanne.jobhunter.util.SecurityUtil;
+import vn.tuanne.jobhunter.util.error.PermissionException;
 
 public class PermissionInterceptor implements HandlerInterceptor {
 

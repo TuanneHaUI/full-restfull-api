@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.domain.response.resume;
+package vn.tuanne.jobhunter.domain.response.resume;
 
 import java.time.Instant;
 import jakarta.persistence.EnumType;
@@ -6,7 +6,7 @@ import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import vn.hoidanit.jobhunter.util.constant.ResumeStateEnum;
+import vn.tuanne.jobhunter.util.constant.ResumeStateEnum;
 
 @Getter
 @Setter

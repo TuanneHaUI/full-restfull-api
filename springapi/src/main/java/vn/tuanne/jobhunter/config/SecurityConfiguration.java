@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.config;
+package vn.tuanne.jobhunter.config;
 
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
@@ -26,13 +26,13 @@ import org.springframework.security.web.SecurityFilterChain;
 import com.nimbusds.jose.jwk.source.ImmutableSecret;
 import com.nimbusds.jose.util.Base64;
 
-import vn.hoidanit.jobhunter.util.SecurityUtil;
+import vn.tuanne.jobhunter.util.SecurityUtil;
 
 @Configuration
 @EnableMethodSecurity(securedEnabled = true)
 public class SecurityConfiguration {
 
-    @Value("${hoidanit.jwt.base64-secret}")
+    @Value("${tuanne.jwt.base64-secret}")
     private String jwtKey;
 
     @Bean

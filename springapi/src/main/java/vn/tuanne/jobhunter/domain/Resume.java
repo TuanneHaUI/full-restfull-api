@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.domain;
+package vn.tuanne.jobhunter.domain;
 
 import java.time.Instant;
 
@@ -16,8 +16,8 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
-import vn.hoidanit.jobhunter.util.SecurityUtil;
-import vn.hoidanit.jobhunter.util.constant.ResumeStateEnum;
+import vn.tuanne.jobhunter.util.SecurityUtil;
+import vn.tuanne.jobhunter.util.constant.ResumeStateEnum;
 
 @Entity
 @Table(name = "resumes")

@@ -1,17 +1,17 @@
-package vn.hoidanit.jobhunter.config;
+package vn.tuanne.jobhunter.config;
 
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import vn.hoidanit.jobhunter.domain.Permission;
-import vn.hoidanit.jobhunter.domain.Role;
-import vn.hoidanit.jobhunter.domain.User;
-import vn.hoidanit.jobhunter.repository.PermissionRepository;
-import vn.hoidanit.jobhunter.repository.RoleRepository;
-import vn.hoidanit.jobhunter.repository.UserRepository;
-import vn.hoidanit.jobhunter.util.constant.GenderEnum;
+import vn.tuanne.jobhunter.domain.Permission;
+import vn.tuanne.jobhunter.domain.Role;
+import vn.tuanne.jobhunter.domain.User;
+import vn.tuanne.jobhunter.repository.PermissionRepository;
+import vn.tuanne.jobhunter.repository.RoleRepository;
+import vn.tuanne.jobhunter.repository.UserRepository;
+import vn.tuanne.jobhunter.util.constant.GenderEnum;
 
 // khi chạy nó mặc định dữ liệu vào database, phải có service nó ms nạp vô
 @Service

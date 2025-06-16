@@ -1,4 +1,4 @@
-package vn.hoidanit.jobhunter.config;
+package vn.tuanne.jobhunter.config;
 
 import java.util.List;
 import org.springframework.context.annotation.Bean;
@@ -31,9 +31,9 @@ public class OpenAPIConfig {
 
     private Contact createContact() {
         return new Contact()
-                .email("ads.hoidanit@gmail.com")
+                .email("ads.tuanne@gmail.com")
                 .name("Hỏi Dân IT")
-                .url("https://hoidanit.vn");
+                .url("https://tuanne.vn");
     }
 
     private License createLicense() {
@@ -48,7 +48,7 @@ public class OpenAPIConfig {
                 .version("1.0")
                 .contact(createContact())
                 .description("This API exposes all endpoints (job hunter)")
-                .termsOfService("https://hoidanit.vn/donate")
+                .termsOfService("https://tuanne.vn/donate")
                 .license(createLicense());
     }
 
@@ -58,7 +58,7 @@ public class OpenAPIConfig {
                 .info(createApiInfo())
                 .servers(List.of(
                         createServer("http://localhost:8080", "Server URL in Development environment"),
-                        createServer("https://hoidanit.vn", "Server URL in Production environment")))
+                        createServer("https://tuanne.vn", "Server URL in Production environment")))
                 .addSecurityItem(new SecurityRequirement().addList("Bearer Authentication"))
                 .components(new Components().addSecuritySchemes("Bearer Authentication", createAPIKeyScheme()));
     }
